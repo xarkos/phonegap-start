@@ -8,8 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
 
 <style>
 
@@ -24,6 +27,15 @@
 	p {
 		text-align:justify;
 	}
+	.image {
+		margin-left: auto; 
+		margin-right: auto;
+		text-align:center;
+	}
+	img {
+		width:90%;
+	}
+	.anton-title {font-family: 'Anton', sans-serif; font-size: 36pt; text-align:center;}
 	
 	
 </style>
@@ -39,24 +51,27 @@
 
 	<div data-role="header">
 		<h1>Family Pet First Aid</h1>
+		<a href="index.html" class="ui-btn ui-icon-delete ui-btn-icon-right" onClick="navigator.app.exitApp()">Close</a>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
+	
+		<p class="anton-title">Family Pet First Aid</p>
 
 		<h2>Table of Contents</h2>
 
 		<fieldset data-role="controlgroup">
-			<a href="#one"   class="ui-btn ui-corner-all">1) Family Pet First Aid</a>
-			<a href="#two"   class="ui-btn ui-corner-all">2) Prevention</a>
-			<a href="#three" class="ui-btn ui-corner-all">3) Preparation</a>
+			<a href="#one"    class="ui-btn ui-corner-all">1) Family Pet First Aid</a>
+			<a href="#two"    class="ui-btn ui-corner-all">2) Prevention</a>
+			<a href="#three"  class="ui-btn ui-corner-all">3) Preparation</a>
 			<a href="#four"   class="ui-btn ui-corner-all">4) Pet 911</a>
 			<a href="#five"   class="ui-btn ui-corner-all">5) Species Specific Information</a>
-			<a href="#six" class="ui-btn ui-corner-all">6) A Pet First Aid Kit</a>
-			<a href="#seven"   class="ui-btn ui-corner-all">7) Your Pet's Medical Record</a>
-			<a href="#eight" class="ui-btn ui-corner-all">Afterword</a>
+			<a href="#six"    class="ui-btn ui-corner-all">6) A Pet First Aid Kit</a>
+			<a href="#seven"  class="ui-btn ui-corner-all">7) Your Pet's Medical Record</a>
+			<a href="#eight"  class="ui-btn ui-corner-all">Afterword</a>
 		</fieldset>
 		
-		<img src="petsheaderone.jpg" class="img-responsive center-block">
+		<div class="image"><img src="img/petsheaderone.jpg"></div>
 		
 	</div><!-- /content -->
 
